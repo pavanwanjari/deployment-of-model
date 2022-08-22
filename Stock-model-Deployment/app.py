@@ -12,7 +12,7 @@ from plotly.subplots import make_subplots
 import tensorflow as tf
 
 
-@st.cache
+
 start = '2016-01-01'
 end = '2022-08-17'
 
@@ -282,7 +282,7 @@ x_input=df1[:].reshape(1,-1)
 temp_input=list(x_input)
 temp_input=temp_input[0].tolist()
 
-
+@st.cache
 date1 = st.date_input("Enter Date in this format yyyy-mm-dd")
 
 from datetime import datetime
