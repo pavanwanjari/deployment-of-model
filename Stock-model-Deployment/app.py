@@ -282,8 +282,8 @@ x_input=df1[:].reshape(1,-1)
 temp_input=list(x_input)
 temp_input=temp_input[0].tolist()
 
-@st.cache
- date1 = st.date_input("Enter Date in this format yyyy-mm-dd")
+
+date1 = st.date_input("Enter Date in this format yyyy-mm-dd")
 
 from datetime import datetime
 my_time = datetime.min.time()
