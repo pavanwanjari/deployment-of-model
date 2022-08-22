@@ -11,6 +11,8 @@ import pandas_ta as ta
 from plotly.subplots import make_subplots
 import tensorflow as tf
 
+
+@st.cache
 start = '2016-01-01'
 end = '2022-08-17'
 
