@@ -225,7 +225,7 @@ data_training_array = scaler.fit_transform(data_training)
 
 
 #Load model 
-model = load_model('model1.h5')
+model = load_model('keras_model.h5')
 
 #testing part
 past_100_days = data_training.tail(100)
