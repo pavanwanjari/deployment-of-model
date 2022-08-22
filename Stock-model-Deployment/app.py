@@ -9,7 +9,7 @@ import datetime as dt
 import yfinance as yf
 import pandas_ta as ta
 from plotly.subplots import make_subplots
-
+import tensorflow as tf
 
 start = '2016-01-01'
 end = '2022-08-17'
@@ -221,7 +221,7 @@ data_training_array = scaler.fit_transform(data_training)
 
 
 #Load model 
-model = load_model("keras_model.h5")
+model = tf.keras.models.load_model("keras_model.h5")
 
 #testing part
 past_100_days = data_training.tail(100)
