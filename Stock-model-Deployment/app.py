@@ -14,7 +14,7 @@ from plotly.subplots import make_subplots
 
 
 
-@st.cache()
+
 start = '2016-01-01'
 end = '2022-08-17'
 
